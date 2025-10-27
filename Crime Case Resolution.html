@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Angeles Crime Case Analysis - Enrique Merino</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .project-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-main-img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto 2rem auto;
+      border-radius: 8px;
+    }
+
+    .project-description h3 {
+      margin-top: 1.5rem;
+      color: #0077cc;
+    }
+
+    .project-description p {
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    .additional-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .additional-images img {
+      width: calc(50% - 0.5rem);
+      border-radius: 8px;
+    }
+
+    .additional-images p {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+      color: #555;
+    }
+
+    .code-link {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .code-link a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #0077cc;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enrique Merino</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="project-title">Los Angeles Crime Case Analysis</div>
+    <img src="la-crime-main.jpg" alt="Los Angeles Crime Analysis Screenshot" class="project-main-img">
+
+    <div class="project-description">
+      <h3>Project Summary</h3>
+      <p>This project involved a full-cycle data science analysis of the Los Angeles crime dataset, aiming to predict whether a case would be solved.</p>
+
+      <h3>Key Steps Included:</h3>
+      <h4>Data Cleaning and Preparation</h4>
+      <p>Handled missing values, removed duplicates, and corrected inconsistencies. Normalized categorical variables and merged additional information from crime and weapon lookup files.</p>
+
+      <h4>Exploratory Data Analysis (EDA)</h4>
+      <p>Examined distributions, correlations, and summary statistics. Analyzed temporal trends and spatial patterns across districts. Investigated solve rates by feature to identify influential factors.</p>
+
+      <h4>Visualization</h4>
+      <p>Created interpretable charts such as bar plots, heatmaps, and feature importance graphs to support analysis.</p>
+
+      <h4>Feature Engineering</h4>
+      <p>Derived new features and encoded categorical variables to enhance model performance.</p>
+
+      <h4>Modeling and Evaluation</h4>
+      <p>Built classification models (Logistic Regression, Random Forest) to predict case solvability. Applied train-test splits, preprocessing, and hyperparameter tuning. Evaluated models using metrics including accuracy, precision, recall, F1-score, and AUC-ROC.</p>
+
+      <h4>Key Insights</h4>
+      <p>Victim demographics (ethnicity, age, gender) strongly influence case resolution. Random Forest outperformed Logistic Regression with 77% accuracy and AUC-ROC of 0.82. Case resolution rates are higher in specific districts, hours, and for certain crime types. Spatial and temporal trends provide actionable guidance for resource allocation and operational planning.</p>
+
+      <h4>Business Impact</h4>
+      <p>Identified key factors affecting case solvability to inform policing strategies. Highlighted districts and times requiring increased attention or resources. Provided data-driven recommendations to improve crime resolution efficiency.</p>
+
+      <p>This project demonstrates practical skills in Python programming, data analysis, machine learning, and data visualization, delivering actionable insights from complex crime data.</p>
+    </div>
+
+    <div class="additional-images">
+      <div>
+        <img src="la-crime-graph1.jpg" alt="Crime Graph 1">
+        <p>Crime distribution by district</p>
+      </div>
+      <div>
+        <img src="la-crime-graph2.jpg" alt="Crime Graph 2">
+        <p>Feature importance chart</p>
+      </div>
+      <!-- Agrega más imágenes si quieres -->
+    </div>
+
+    <div class="code-link">
+      <a href="LA_Crime_Analysis.py" target="_blank">View Full Python Code</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enrique Merino - Data Analytics Portfolio</p>
+  </footer>
+
+</body>
+</html>
