@@ -1,32 +1,3 @@
-#about h2 {
-  text-align: center; /* centra el título */
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 2rem;
-  font-weight: bold;
-}
-
-/* Flexbox para foto y texto */
-.about-content {
-  display: flex;
-  align-items: center; /* centra verticalmente */
-  gap: 2rem; /* espacio entre imagen y texto */
-  justify-content: center; /* centra el bloque horizontalmente */
-  flex-wrap: wrap; /* para que se acomode en pantallas pequeñas */
-}
-
-.about-content img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #0077cc;
-}
-
-.about-content p {
-  flex: 1; /* el texto ocupa el espacio restante */
-  min-width: 250px; /* evita que quede muy pequeño en pantallas chicas */
-}
 
 #root {
   max-width: 1280px;
