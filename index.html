@@ -16,20 +16,38 @@
       color: #333;
     }
 
+    /* ================= Header ================= */
     header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       background-color: #fff;
-      padding: 2rem 1rem;
+      padding: 1rem 2rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      text-align: center;
+      flex-wrap: wrap;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    header .title {
+      flex: 1;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
 
     nav a {
-      margin: 0 1rem;
       text-decoration: none;
       color: #333;
       font-weight: bold;
@@ -61,7 +79,7 @@
       align-items: center;
       gap: 2rem;
       justify-content: center;
-      flex-wrap: wrap; /* responsive */
+      flex-wrap: wrap;
       background-color: #fff;
       padding: 2rem;
       border-radius: 8px;
@@ -69,11 +87,11 @@
     }
 
     .about-content img {
-      width: 25%;
-      max-width: 250px;
-      height: auto;
-      border-radius: 50%;
-      /*border: 3px solid #0077cc;*/
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%; /* redonda */
+      /* border eliminado */
     }
 
     .about-content p {
@@ -115,8 +133,10 @@
   </style>
 </head>
 <body>
+  <!-- ================= Header ================= -->
   <header>
     <h1>Enrique Merino</h1>
+    <div class="title">Data Analytics Portfolio - Solution Architect</div>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -173,7 +193,7 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Email a: <a href="mailto:enriquemerino12@outlook.com.pe">enriquemerino12@outlook.com.pe</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">www.linkedin.com/in/enriquemerinocruzado</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">linkedin.com/in/tu-perfil</a></p>
     <p>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></p>
   </section>
 
@@ -183,4 +203,3 @@
   </footer>
 </body>
 </html>
-
