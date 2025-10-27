@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Housing Prices Analysis - Enrique Merino</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../app.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .project-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-main-img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto 2rem auto;
+      border-radius: 8px;
+    }
+
+    .project-description h3 {
+      margin-top: 1.5rem;
+      color: #0077cc;
+    }
+
+    .project-description p {
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    .additional-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .additional-images img {
+      width: calc(50% - 0.5rem);
+      border-radius: 8px;
+    }
+
+    .additional-images p {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+      color: #555;
+    }
+
+    .code-link {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .code-link a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #0077cc;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enrique Merino</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="project-title">Housing Prices Analysis</div>
+    <img src="../images/housing/main-housing.jpg" alt="Housing Prices Dashboard" class="project-main-img">
+
+    <div class="project-description">
+      <h3>Project Summary</h3>
+      <p>This project focuses on analyzing housing prices data to explore market trends, understand key pricing drivers, and generate actionable insights using Power BI. The analysis covers property sales over five years (2006–2010), applying predictive and prescriptive analytics techniques to support decision-making.</p>
+
+      <h3>Key Objectives</h3>
+      <ul>
+        <li>Identify the main factors influencing housing prices, including location, size, and condition.</li>
+        <li>Forecast potential price trends using predictive analytics methods.</li>
+        <li>Design interactive dashboards to visualize market dynamics and support real estate decision-making.</li>
+      </ul>
+
+      <h3>Methodology</h3>
+      <ul>
+        <li>Imported, cleaned, and transformed the housing dataset for consistency and accuracy.</li>
+        <li>Developed DAX measures and calculated fields to evaluate price variations by region and time.</li>
+        <li>Applied regression-based forecasting to estimate future property prices.</li>
+        <li>Implemented Power BI visuals such as trend lines, map visualizations, and KPI indicators for interactive reporting.</li>
+      </ul>
+
+      <h3>Insights</h3>
+      <ul>
+        <li>Property size and neighborhood ranking were the strongest predictors of price.</li>
+        <li>Significant seasonal fluctuations were detected, with higher prices during spring and summer months.</li>
+        <li>Forecasts indicated a steady upward trend in housing prices post-2010, suggesting market recovery potential.</li>
+      </ul>
+
+      <h3>Business Impact</h3>
+      <p>The findings provide valuable guidance for real estate investors, helping identify high-performing locations and optimize buying or selling timing. The Power BI dashboard allows stakeholders to interactively explore housing trends and forecast scenarios for better strategic planning.</p>
+
+      <p>This project highlights practical experience in Power BI, data modeling, and predictive analytics — turning raw housing data into actionable intelligence.</p>
+    </div>
+
+    <div class="additional-images">
+      <div>
+        <img src="../images/housing/housing-dashboard1.jpg" alt="Housing Dashboard 1">
+        <p>Interactive housing prices dashboard</p>
+      </div>
+      <div>
+        <img src="../images/housing/housing-dashboard2.jpg" alt="Housing Dashboard 2">
+        <p>Forecast visualization and regional analysis</p>
+      </div>
+    </div>
+
+    <div class="code-link">
+      <a href="../projects/Housing_Prices_Report.pbix" target="_blank">View Power BI Report</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enrique Merino - Data Analytics Portfolio</p>
+  </footer>
+
+</body>
+</html>
