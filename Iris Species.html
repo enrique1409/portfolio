@@ -70,13 +70,12 @@
 
     .additional-images {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      justify-content: center;
       margin: 2rem 0;
     }
 
     .additional-images div {
-      flex: 1 1 calc(33.333% - 1rem);
+      max-width: 80%;
       text-align: center;
     }
 
@@ -133,25 +132,18 @@
       <h3>Morphological Feature Analysis of Iris Species: All Species</h3>
       <div class="additional-images">
         <div>
-          <img src="Images/IRIS/Iris1.jpg" alt="Iris EDA">
+          <img src="Images/IRIS/Iris1.jpg" alt="Iris Morphological Analysis">
           <p>Exploratory data analysis showing feature distributions by species.</p>
-        </div>
-        <div>
-          <img src="images/Iris/iris-correlation.jpg" alt="Correlation Matrix">
-          <p>Correlation matrix highlighting relationships among flower dimensions.</p>
-        </div>
-        <div>
-          <img src="images/Iris/iris-model.jpg" alt="Model Results">
-          <p>Model performance visualization comparing prediction accuracy across algorithms.</p>
         </div>
       </div>
 
-      <h3>K-Means Clustering and Hierarchical Clustering with PCA</h3>
-      <p>Petal length and width were the most influential features for classifying species. The Random Forest model achieved the highest accuracy among tested algorithms, confirming strong separability between the three Iris classes.</p>
-
-      <h3>Tools & Techniques</h3>
-      <p>Python, Pandas, Matplotlib, Seaborn, Scikit-learn, Machine Learning Classification Models.</p>
-    </div>
+      <h3>Morphological Feature Analysis of Iris Species: All Species II</h3>
+      <div class="additional-images">
+        <div>
+          <img src="Images/IRIS/Iris2.jpg" alt="Iris Morphological Analysis">
+          <p>Exploratory data analysis showing feature distributions by species.</p>
+        </div>
+      </div>
 
     <div class="code-link">
       <a href="Iris_Species_Analysis.py" target="_blank">View Full Python Code</a>
@@ -164,4 +156,3 @@
 
 </body>
 </html>
-
