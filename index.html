@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enrique Merino - Data Analytics Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Portfolio of Enrique Merino - Data Analyst skilled in Python, Power BI, Tableau, and R.">
   <style>
     /* ================= Global Styles ================= */
     body {
@@ -55,7 +57,7 @@
 
     section {
       max-width: 900px;
-      margin: 2rem auto;
+      margin: 3rem auto;
       padding: 0 1rem;
     }
 
@@ -80,18 +82,14 @@
       gap: 2rem;
       justify-content: center;
       flex-wrap: wrap;
-      background-color: none;
       padding: 2rem;
-      border-radius: 0;
-      box-shadow: none;
     }
 
     .about-content img {
       width: 200px;
       height: 200px;
       object-fit: cover;
-      border-radius: 50%; /* redonda */
-      /* border eliminado */
+      border-radius: 50%;
     }
 
     .about-content p {
@@ -99,14 +97,14 @@
       min-width: 250px;
     }
 
-    /* ================= Projects & Skills ================= */
-    .projects, .skills {
+    /* ================= Projects ================= */
+    .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
     }
 
-    .project, .skill {
+    .project {
       background: #fff;
       padding: 1rem;
       border-radius: 8px;
@@ -121,6 +119,53 @@
       border-radius: 4px;
       text-decoration: none;
       margin-top: 0.5rem;
+    }
+
+    a.button:hover {
+      background: #005fa3;
+      transition: background 0.3s ease;
+    }
+
+    /* ================= Skills & Education ================= */
+    #skills {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    #skills h2 {
+      margin-top: 2rem;
+      color: #333;
+    }
+
+    .skills p, .education p {
+      margin: 0.8rem 0;
+      line-height: 1.6;
+    }
+
+    .skills strong, .education strong {
+      color: #0077cc;
+    }
+
+    .education a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .education a:hover {
+      text-decoration: underline;
+    }
+
+    /* ================= Contact ================= */
+    #contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
     }
 
     /* ================= Footer ================= */
@@ -159,33 +204,45 @@
     <h2>Featured Projects</h2>
     <div class="projects">
       <div class="project">
-        <h3>Los Angeles Crime Case Analysis(Python)</h3>
-        <p>Analysis of the Los Angeles Police Department Crime Dataset in Python, combining predictive and exploratory approaches. The project features EDA, feature engineering, demographic patterns, spatial heatmaps, and Random Forest modeling to uncover the main factors influencing the solvability of crime cases.</p>
-        <a href="Crime Case Resolution" class="button">View Project</a>
+        <h3>Los Angeles Crime Case Analysis (Python)</h3>
+        <p>Predictive and exploratory analysis of the Los Angeles Police Department Crime Dataset using Python. Includes EDA, feature engineering, demographic insights, spatial heatmaps, and Random Forest modeling to identify the key drivers of crime case solvability.</p>
+        <a href="crime_case_resolution.html" class="button">View Project</a>
       </div>
       <div class="project">
         <h3>Iris Species (Power BI)</h3>
-        <p>Processed large datasets with PySpark and Hadoop, exported results to SQL Server.</p>
-        <a href="Iris Species.html" class="button">View Project</a>
+        <p>Visualization and classification of the Iris dataset using Power BI dashboards, highlighting species patterns and predictive insights.</p>
+        <a href="iris_species.html" class="button">View Project</a>
       </div>
       <div class="project">
         <h3>Predictive Analytics Project</h3>
-        <p>Regression and classification models with Python and R, feature engineering and validation.</p>
+        <p>Regression and classification models with Python and R, including feature engineering, model validation, and visualization of predictive outcomes.</p>
         <a href="#" class="button">View Project</a>
       </div>
     </div>
   </section>
 
-  <!-- ================= Skills ================= -->
+  <!-- ================= Skills & Education ================= -->
   <section id="skills">
-    <h2>Technical Skills</h2>
+    <h2>🛠 Skills</h2>
     <div class="skills">
-      <div class="skill">Python</div>
-      <div class="skill">R</div>
-      <div class="skill">SQL</div>
-      <div class="skill">Power BI</div>
-      <div class="skill">Tableau</div>
-      <div class="skill">PySpark / Hadoop</div>
+      <p><strong>Languages:</strong> Python, SQL, R, Java, C++, Shell</p>
+      <p><strong>Tools:</strong> Power BI, Tableau, Jupyter, Git, SPSS, Jenkins, Ansible</p>
+      <p><strong>Databases:</strong> MySQL, Postgres, Oracle, Vertica</p>
+      <p><strong>Methods:</strong> Regression, Classification, Clustering, Forecasting, Optimization</p>
+    </div>
+
+    <h2>🎓 Education & Certifications</h2>
+    <div class="education">
+      <p><strong>Master in Data Analytics</strong> – University of Niagara Falls, Canada (2024–2026)<br>
+        <em>President’s Academic Distinction List:</em> Fall 2024, Winter 2025, Spring 2025<br>
+        (Awarded for a 4.00 GPA / 90%+ in full course load. Each term included a $1,000 scholarship.)
+      </p>
+      <p><strong>Electronic Engineering</strong> – Universidad Nacional de Colombia (1996–2002)</p>
+      <p><strong>Project Management Specialist</strong> – Universidad Santo Tomás (2009–2010)</p>
+      <p><strong>Mobile Telecommunications Specialist</strong> – Universidad Distrital Francisco José de Caldas (2003–2004)</p>
+      <p><strong>SCRUM Fundamentals Certified</strong> – SCRUMstudy (2020)</p>
+      <p><strong>Certified SAFe® 6 Product Owner/Product Manager</strong> – Scaled Agile (2023)</p>
+      <p>📄 <a href="https://www.linkedin.com/in/enriquemerinocruzado/" target="_blank">View my full experience on LinkedIn</a> or <a href="cv_enrique_merino.pdf" target="_blank">download my CV</a>.</p>
     </div>
   </section>
 
