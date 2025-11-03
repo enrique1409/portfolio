@@ -34,6 +34,17 @@
       height: 200px; /* 🔹 aumenta el valor (por ejemplo 300px o más) */
     }
 
+
+    /* Agregado al fondo capa oscura */
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0,0,0,0.4); /* capa oscura */
+      z-index: 0;
+    }
+
+
     header h1 { /* Esto es la cabezera mi nombre */
       margin: 0;
       font-size: 1.8rem;    /* aumenta el tamaño */
